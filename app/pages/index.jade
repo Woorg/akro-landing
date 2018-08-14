@@ -1,0 +1,34 @@
+extends /blocks/layout-default/layout-default
+
+include /blocks/header/header
+include /blocks/hero/hero
+include /blocks/stats/stats
+include /blocks/sphere/sphere
+include /blocks/works/works
+include /blocks/how/how
+include /blocks/get/get
+include /blocks/clients/clients
+include /blocks/faq/faq
+include /blocks/cta/cta
+
+include /blocks/footer/footer
+include /blocks/popup/popup
+
+
+
+block head
+	- var pageTitle = 'Akro - Разработка продающих лендингов под ключ';
+
+block content
+	+header()
+	+hero()(style="background-image: url('assets/images/content/hero-bg.png')")
+	+stats()#stats
+	+sphere()
+	+works()
+	+how()
+	+get()
+	+clients()
+	+faq()
+	+cta()
+	+footer()
+	+popup().mfp-hide

@@ -1,0 +1,61 @@
+.faq
+	display block
+	background #Fff
+	&__in
+		@extends .in
+		padding-top 80px
+		padding-bottom 88px
+		color #000
+	&__title
+		@extends .title
+		text-align center
+		margin-bottom 50px
+	&__list
+		margin auto
+		max-width 750px
+		+r($m)
+			max-width 100%
+	&__item
+		position relative
+		margin-bottom 32px
+		padding-left 195px
+		min-height 165px
+		+r($m)
+			padding-left 0
+	&__icon-w
+		position absolute
+		z-index 1
+		top 0
+		left 0
+		width 165px
+		height 165px
+		background #00c6d7
+		+r($m)
+			position relative
+			margin auto
+			margin-bottom 30px
+		&:after
+			position absolute
+			z-index 0
+			top -10px
+			left -10px
+			width 160px
+			height 160px
+			content ''
+			background transparent
+			border 3px solid #00c6d7
+	&__icon
+		position absolute
+		top 50%
+		left 50%
+		width 100px
+		height 96px
+		background url('../images/general/faq-icon.svg') 50% 50% no-repeat
+		transform translate(-50%,-50%)
+	&__item-title
+		margin-bottom 14px
+		font-size 20px
+		font-family $mB
+	&__text
+		font-size 16px
+		font-family $mR

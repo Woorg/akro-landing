@@ -1,0 +1,19 @@
+include ../icon/icon
+
+mixin footer()
+	footer.footer&attributes(attributes)
+		.footer__in
+			.footer__top
+				a.footer__logo.logo.logo_sec(href="#logo")
+					img(src="assets/images/general/logo.svg", alt="akro").logo__brand
+					.logo__slogan Разработка продающих лендингов под ключ
+
+				.footer__contacts
+					a.footer__phone.phone(href="tel:74952202125")
+						| +7 (495) 220-21-25
+
+					a.footer__email.email(href="mailto:info@akro.agency")
+						+icon('email', true).email__icon
+						| info@akro.agency
+			.footer__bottom
+				.footer__copyright © 2018 AKRO agency

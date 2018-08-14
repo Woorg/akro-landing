@@ -1,0 +1,100 @@
+.popup
+	position relative
+	margin auto
+	padding 50px
+	// display none
+	max-width 654px
+	background #000
+	+r($m)
+		padding 15px
+
+	&_mobile
+		display none
+	&_mobile-open
+		position absolute
+		top 128px
+		right 0
+		// bottom 0
+		left 0
+		z-index 1
+		padding-left 15px
+		padding-right 15px
+		display block
+		max-width 100%
+		width 100%
+		background #000
+		+r($m)
+			top 69px
+			padding-top 40px
+			padding-bottom 28px
+		.popup__in
+			margin auto
+
+		.popup__title
+			@extends .title
+			letter-spacing 4px
+			+r($m)
+				margin-bottom 15px
+				letter-spacing 1.12px
+		.popup__text
+			+r($m)
+				margin-bottom 30px
+				padding-right 80px
+		.form__col
+			+r($m)
+				width 100%
+		.form__row_fe
+			margin-left 0
+			+r($m)
+				justify-content center
+
+		.form__note
+			+r($m)
+				margin-right 0
+
+		.form__note-text
+			+r($m)
+				font-size 15px
+
+		.form__submit
+			+r($t)
+				margin-top 20px
+	&__title
+		@extends .title
+		font-size 48px
+		+r($m)
+			// margin-bottom 20px
+			margin-bottom 15px
+			font-size 24px
+			letter-spacing 1.12px
+	&__text
+		margin-bottom 20px
+		line-height 1.3
+		color #FFF
+		+r($m)
+			margin-bottom 30px
+			padding-right 60px
+
+	&__form
+		position relative
+		margin auto
+		max-width 360px
+
+.popup-callback
+	background rgba(0,0,0, .65)
+	.mfp-close
+		top -60px
+		right -60px
+		width 30px
+		height 30px
+		background url('../images/general/menu-close.svg') 0 0 / cover no-repeat
+		opacity 1
+		// display none
+		&:hover
+			opacity .8
+		+r($m)
+			top -38px
+			right 0
+			width 20px
+			height 20px
+

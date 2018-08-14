@@ -1,0 +1,13 @@
+include ../icon/icon
+
+mixin header()
+	header.header&attributes(attributes)
+		.header__in
+			a.header__logo.logo(href="#logo")
+				img(src="assets/images/general/logo.svg", alt="akro").logo__brand
+				.logo__slogan Разработка продающих <br/> лендингов под ключ
+			.header__contacts
+				a.header__phone.phone(href="tel:74952202125")
+					| +7 (495) 220-21-25
+				a.header__button.button.popup-open(href="#callback") Заказать звонок
+

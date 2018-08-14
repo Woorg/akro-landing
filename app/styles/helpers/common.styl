@@ -1,0 +1,112 @@
+// General body styles
+
+.page
+	position relative
+	background-color #000000
+	font-display swap
+	font-family $mR
+	font-weight normal
+	font-size 16px
+	line-height 1.625
+	color #5a5a5a
+	tr(all .3s ease)
+
+img
+	display block
+	max-width 100%
+	height auto
+
+// Container
+
+.in
+	margin auto
+	padding-right 15px
+	padding-left 15px
+	min-width 280px
+	max-width 1170px
+	+r($tL)
+		padding-left 24px
+		padding-right 24px
+	+r($m)
+		padding-left 15px
+		padding-right 15px
+// Links
+
+// a:link
+// 	text-decoration none
+
+// Buttons
+
+.button
+	border none
+	padding-top 16px
+	padding-right 30px
+	padding-bottom 15px
+	padding-left 30px
+	display inline-block
+	vertical-align top
+	background-color #00c6d7
+	color #ffffff
+	font-weight normal
+	font-family $mB
+	font-size 16px
+	line-height 1
+	text-align center
+	text-decoration none
+	tr(all .3s ease)
+	&:hover
+		background-color darken(#00c6d7, 10)
+		tr(all .3s ease)
+	&_sec
+		border 2px solid #00c6d7
+		padding-bottom 15px
+		background transparent
+		&:hover
+			background-color #00c6d7
+
+// Titles
+
+.title
+	position relative
+	padding-bottom 23px
+	font-size 64px
+	font-family $mB
+	// text-transform uppercase
+	// letter-spacing 3px
+	&:after
+		position absolute
+		top 100%
+		left 50%
+		width 100px
+		height 4px
+		content ''
+		background-color #00c6d7
+		transform translateX(-50%)
+		+r($m)
+			width 50px
+	+r($tL)
+		font-size 48px
+		// letter-spacing 2.25px
+	+r($m)
+		font-size 24px
+		// letter-spacing 1.13px
+
+// wysiwyg editor styles
+
+.wysiwyg
+	p
+		margin-bottom 35px
+		font-size 18px
+		line-height 1.6
+		&:last-child
+			margin-bottom 0
+
+	img
+		margin-bottom 35px
+		max-width 100%
+		height auto
+
+.resp-image
+	img
+		max-width 100%
+		height auto

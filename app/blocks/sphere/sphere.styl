@@ -1,0 +1,50 @@
+.sphere
+	display block
+	background #fff
+	&__in
+		@extends .in
+		padding-top 80px
+		padding-bottom 100px
+		+r($tL)
+			padding-bottom 34px
+	&__title
+		@extends .title
+		margin-bottom 83px
+		text-align center
+		color #000000
+		+r($m)
+			margin-bottom 50px
+			padding-left 80px
+			padding-right 80px
+			line-height 1
+	&__list
+		display flex
+		flex-flow row wrap
+		justify-content space-between
+		align-items flex-start
+	&__item
+		width 190px
+		text-align center
+		+r($tL)
+			margin-bottom 66px
+			width 33.3%
+		+r($m)
+			width 100%
+	&__icon
+		margin auto
+		margin-bottom 63px
+		max-width 100px
+		min-height 100px
+		+r($m)
+			margin-bottom 30px
+			min-height auto
+		img
+			display block
+			max-width 100%
+			height auto
+
+	&__text
+		color #000000
+		font-family $mB
+		font-size 20px
+		line-height 1

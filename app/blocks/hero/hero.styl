@@ -1,0 +1,67 @@
+.hero
+	position relative
+	z-index 0
+	display block
+	background-color #00c6d7
+	background-position 50% 0
+	background-repeat no-repeat
+	background-size 100% 768px
+	+r($tL)
+		background-size cover
+	+r($m)
+		height 768px
+	&__in
+		position relative
+		@extends .in
+		padding-top 270px
+		height 768px
+		text-align center
+		color #FFF
+		+r($tL)
+			// padding-top 227px
+			padding-top 313px
+		+r($m)
+			padding-top 412px
+
+	&__title
+		margin auto
+		margin-top 33px
+		margin-bottom 56px
+		max-width 600px
+		font-family $mR
+		font-size 36px
+		letter-spacing tracking(0)
+		line-height 1
+		text-transform none
+		+r($tL)
+			padding-left 0
+			padding-right 0
+		+r($m)
+			margin-bottom 45px
+			padding-left 0
+			padding-right 0
+			font-size 18px
+		strong
+			display block
+			font-family $mB
+			font-size 64px
+			+r($m)
+				font-size 24px
+
+
+
+	&__button
+		+r($tL)
+			margin-left 33px
+		+r($m)
+			margin-left 0
+
+
+	&__arrow
+		position absolute
+		top calc(100% - 86px)
+		left 50%
+		width 43px
+		height 36px
+		background url('../images/general/arrow-down.svg') 50% 0 / cover no-repeat
+		transform translateX(-50%)

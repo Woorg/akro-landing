@@ -1,0 +1,90 @@
+.services
+	display block
+	&__in
+		@extends .in
+		// border-top 1px solid #aaaaaa
+		padding-top 82px
+		+r($tL)
+			border-top none
+		+r($m)
+			padding-top (82px/2)
+	&__title
+		@extends .title
+		margin-bottom 43px
+		+r($tL)
+			padding-left 33px
+			padding-right 33px
+		+r($m)
+			margin-bottom (43px/2)
+			padding-left 0
+			padding-right 0
+	&__list
+		display flex
+		flex-flow row wrap
+		justify-content flex-start
+		align-items flex-start
+		overflow hidden
+	&__item
+		width 33.3%
+		height 460px
+		background-position 50% 0
+		background-repeat no-repeat
+		background-size cover
+		+r($m)
+			width 100%
+	&__link
+		position relative
+		height 100%
+		display block
+		background rgba(0, 0, 0, .7)
+
+		color #fff
+		text-decoration none
+		tr(all .3s ease)
+		&:hover
+			background-color rgba(0, 150, 162, .7)
+			tr(all .3s ease)
+			.services__top
+				border-bottom 1px solid #fff
+				tr(all .3s ease)
+			.services__button
+				border 2px solid #fff
+				tr(all .3s ease)
+	&__top
+		position relative
+		border-bottom 1px solid #767171
+		margin-right 80px
+		padding-top 56px
+		tr(all .3s ease)
+	&__num
+		position absolute
+		top 44px
+		right -48px
+		font-family $mL
+		color #fff
+	&__item-title
+		margin-left 30px
+		padding-top 120px
+		font-size 36px
+		color #FFF
+		+r($tL)
+			font-size 24px
+		+r($m)
+			margin-left 15px
+	&__button
+		position absolute
+		// border 1px solid #fff
+		border 2px solid #00c6d7
+		padding-top 16px
+		padding-right 30px
+		padding-bottom 9px
+		padding-left 30px
+		right 30px
+		bottom 50px
+		+r($tL)
+			padding-top 14px
+
+	&__button-icon
+		width 14px
+		height 16px
+		fill #ffd300
